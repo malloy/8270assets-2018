@@ -1,0 +1,44 @@
+Sep 13, Thu:
+  -- Questions about move semantics?
+    -- Well I have one?
+  -- flex:
+    -- ambiguity:
+      -- codes
+      -- first
+    -- wc
+    -- states
+    -- line numbers: lineno
+    -- debug mode
+  -- static vars
+  -- Singleton Pattern
+
+Sep 11, Tue:
+  -- How to learn C++ with NO BACKGROUND?
+  -- Review Quiz
+  -- Move semantics
+  -- flex: wc and states
+
+Aug 28, Tue:
+  -- Office hour: Wed 10-11:30 AM
+  -- quiz on Thursday, Sept. 6
+  -- Read Section 1, the Introduction, to grammarware paper
+  -- Discuss slides about Grammars
+  -- Answer questions about Basics and Classes
+  -- Do the Rule of 3
+
+Aug 30, Thu:
+  -- Regular grammars and regular expressions
+  -- Review Rule of 3
+  -- What gets called
+  -- The Rule of 5
+  -- The Rule of Zero
+
+Sep 4, Tue:
+  -- What gets called
+    -- Why prefer init over assign?!
+  -- Introduce vectors
+    -- size vs capacity
+    -- value semantics
+  -- Intro to Flex
+  -- Project #2
+  -- Quiz #1 -- Thursday

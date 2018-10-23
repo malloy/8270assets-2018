@@ -1,0 +1,42 @@
+Why does glutTimerFunc() only execute my callback once?
+
+GLUT's function for starting a timer and specifying a timer callback, 
+glutTimerFunc(), is specified to execute the callback after the elapsed 
+time, then delete the timer. This is the way timers work in several APIs.
+
+Often, repeated callbacks are useful. Implement this by resetting the 
+timer within your callback routine. For example, the following timer 
+callback routine resets the timer for repeated callbacks:
+
+static void timerCallback (int value) { 
+  /* Do timer processing */ 
+  /* maybe glutPostRedisplay(), if necessary */ 
+  /* call back again after elapsedUSecs have passed */ 
+  glutTimerFunc (elapsedUSecs, timerCallback, value); 
+} 
+
+From the name pages:
+void
+glutTimerFunc(unsigned int msec, void( *callback )( int data ), int data);
+
+Parameters
+msec Milliseconds till invocation.
+callback Client function for timer event.
+data Arbitrary data; passed to callback .
+
+Description
+After at least msec milliseconds, OpenGLUT will call callback , 
+passing in your user-supplied data parameter. OpenGLUT will call 
+your function only once.
+This callback is not bound to any window.
+
+Caveats
+
+Unlike most other callbacks, timers only occur once.
+Unlike most other callbacks, you cannot deregister a timer callback.
+Unlike most other callbacks, you can register an arbitrary number of timers.
+
+See Also
+glutidlefunc(3) glutmainloop(3) glutmainloopevent(3) 
+
+

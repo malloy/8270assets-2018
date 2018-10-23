@@ -1,0 +1,7 @@
+
+1. Place constructors and assignment in private section.
+2. Declare a static instance variable as a data attribute of the class
+3. Define the static instance variable somewhere in the anonymous
+   namespace.
+4. Define a static class member function to access the instance variable. 
+

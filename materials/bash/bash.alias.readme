@@ -1,0 +1,21 @@
+
+These are some of the aliases that I find useful. They all
+represent savings in key strokes so that I can spend my time
+in more useful endeavers. To use them, you must activate them,
+usually by invoking some command at the bottom of a script
+that is executed upon login. The shell that I use is bash, so
+I place the following code at the bottom of a file in my home
+directory named .bashrc
+
+
+if [ -f ~/.bash.alias ]; then
+    . ~/.bash.alias
+fi
+
+You can call the alias file anything you want, as long as you
+use the correct name in the bashrc script.
+
+Also, the two files ".bashrc" and ".bash.alias" have the period
+as their first character; thus, on linux/unix, they are hidden
+files and will not appear if you use "ls". To see these files, 
+use: "ls -la"

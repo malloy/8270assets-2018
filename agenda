@@ -1,0 +1,90 @@
+
+Oct 9, Tue:
+  -- operator overload -- to enable sorting
+
+Oct 4, Thu:
+  -- Review containers
+  -- Exam #1:
+    -- Review Exponent example
+    -- Singleton
+  -- Discuss location finding (see Ch 8 in Levine Book)
+  -- Review the Python 2.7 grammar and where/how
+     to insert semantic actions
+  -- operator overload -- to enable sorting
+  -- emplace_back -- when it helps?
+  -- Inheritance
+
+Oct 2, Tue:
+  -- Containers:
+    -- vector
+    -- list
+    -- map
+  -- emplace_back -- when it helps?
+  -- Exam #1:
+    -- Singleton
+    -- Exponent
+    -- radon
+
+Sep 27, Thu:
+  -- Exam #1
+
+Sep 25, Tue:
+  -- conflicts -- the pointer model
+  -- Inserting semantic actions:
+    -- simple -- no actions but prec set
+    -- noPrec -- grammar refactored, no prec set
+    -- calc -- calculator example -- no variables
+    -- typedStack -- calculator w/ variables
+  -- Project #3
+  -- Exam #1 -- everything up to and incl today
+
+Sep 20, Thu:
+  -- The Bison Parser Generator: shift/reduce parsing
+     LALR(1)
+  -- Balanced Parens -- adding sets of them
+  -- sum -- adding numbers
+
+Sep 13, Thu:
+  -- Questions about move semantics?
+    -- Well I have one?
+  -- flex:
+    -- ambiguity:
+      -- codes
+      -- first
+    -- wc
+    -- states
+    -- line numbers: lineno
+    -- debug mode
+  -- static vars
+  -- Singleton Pattern
+
+Sep 11, Tue:
+  -- How to learn C++ with NO BACKGROUND?
+  -- Review Quiz
+  -- Move semantics
+  -- flex: wc and states
+
+Aug 28, Tue:
+  -- Office hour: Wed 10-11:30 AM
+  -- quiz on Thursday, Sept. 6
+  -- Read Section 1, the Introduction, to grammarware paper
+  -- Discuss slides about Grammars
+  -- Answer questions about Basics and Classes
+  -- Do the Rule of 3
+
+Aug 30, Thu:
+  -- Regular grammars and regular expressions
+  -- Review Rule of 3
+  -- What gets called
+  -- The Rule of 5
+  -- The Rule of Zero
+
+Sep 4, Tue:
+  -- What gets called
+    -- Why prefer init over assign?!
+  -- Introduce vectors
+    -- size vs capacity
+    -- value semantics
+  -- Intro to Flex
+  -- Project #2
+  -- Quiz #1 -- Thursday

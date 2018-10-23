@@ -1,0 +1,2 @@
+Hello world!
+This is a typical text files; it is not strangely formated in any way.

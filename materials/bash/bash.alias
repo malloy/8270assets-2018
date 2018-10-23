@@ -1,0 +1,20 @@
+alias h='history'
+alias cp='cp -i'
+alias mv='mv -i'
+alias l='/bin/ls -lah | less'
+alias ls='ls -FC --color=always'
+alias re='reset'
+
+alias des='cd /home/malloy/Desktop'
+alias doc='cd /home/malloy/Documents'
+alias dow='cd /home/malloy/Downloads'
+
+
+alias m='make'
+alias mc='make clean'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
