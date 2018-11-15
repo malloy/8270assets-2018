@@ -1,0 +1,2 @@
+#!/bin/bash
+python -i < cases/$1.py 2>/dev/null > cases/$1.out

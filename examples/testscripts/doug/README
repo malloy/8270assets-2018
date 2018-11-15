@@ -1,0 +1,13 @@
+makeCase is a bash script that runs python against a test case in the
+cases directory.
+
+Usage: makeCase <testcasename>
+
+For example makeCase 1 will read cases/1.py into the real python interpreter
+and send the output to cases/1.out, redirecting error to /dev/null
+
+This is only useful if your program creates output that matches the actual
+python interpreter. My program for example, does not handle repeating decimals
+the same way python does, so for my test cases I picked decimals that don't repeat.
+
+To run the actual test caess, I used the professor's original test.py.
