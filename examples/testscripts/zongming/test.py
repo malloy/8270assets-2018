@@ -81,6 +81,8 @@ def compareResults(myPath, pyPath, removeOutputs=True):
                 if abs(myValueFloat-pyValueFloat) > precisionValue:
                     flag = False
                     break
+    myFile.close()
+    pyFile.close()
     if removeOutputs:
         retcode1 = subprocess.call("rm "+myPath, shell=True)
         retcode2 = subprocess.call("rm "+pyPath, shell=True)
@@ -105,9 +107,9 @@ files = os.listdir( testDir )
 for x in files:
     if fnmatch.fnmatch(x, "*.py"):
         rflag, myPath, pyPath = runTestCase(testDir, x)
-    if (rflag==0) and checkFileExistence(myPath, pyPath):
-        cFlag = compareResults(myPath, pyPath, removeOutputs=True)
-        if cFlag:
-            print "testcase: {0} passed".format(x)
-        else:
-            print "\tTEST CASE FAILED:", x
+        if (rflag==0) and checkFileExistence(myPath, pyPath):
+            cFlag = compareResults(myPath, pyPath, removeOutputs=True)
+            if cFlag:
+                print "testcase: {0} passed".format(x)
+            else:
+                print "\tTEST CASE FAILED:", x
